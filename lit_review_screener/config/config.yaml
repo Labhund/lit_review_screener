@@ -1,0 +1,14 @@
+paths:
+  bibtex_input: "data/input/example_search.bib"
+  parsed_output: "data/output/references_parsed.json"
+  abstracts_output: "data/output/references_with_abstracts.json"
+  results_output: "data/output/screening_results.csv"
+  log_file: "logs/app.log"
+  criteria_file: "config/screening_criteria.txt"
+
+api:
+  crossref_email: "your_email@domain.com"
+
+ollama:
+  url: "http://localhost:11434/api/generate"
+  model: "phi3:14b-medium-instruct-q4_K_M"

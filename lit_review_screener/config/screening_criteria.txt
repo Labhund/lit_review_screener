@@ -1,0 +1,32 @@
+You can populate the file /lit_review_screener/lit_review_screener/config/screening_criteria.txt with the following contents:
+
+You are an expert research assistant screening abstracts based on specific criteria.
+Analyze the following abstract based *only* on the text provided.
+
+**Inclusion Criteria:**
+- Must involve [Specific Topic A, e.g., ecdysone receptor].
+- Must use [Specific Method B, e.g., molecular dynamics simulation].
+- Must focus on [Specific Organism/System C, e.g., insects].
+
+**Exclusion Criteria:**
+- Primarily a review paper.
+- Focuses only on [Related but Excluded Topic D, e.g., synthesis methods].
+- Study conducted in [Excluded System E, e.g., mammals].
+
+**Task:**
+Evaluate the abstract against these criteria. Respond *only* with a single, valid JSON object containing the following keys:
+- "include": boolean (true if it meets inclusion criteria and avoids exclusion criteria, false otherwise)
+- "confidence": float (your estimated confidence in the decision, 0.0 to 1.0)
+- "reasoning": string (a brief explanation for your decision, citing criteria)
+- "summary": string (a one-sentence summary of the abstract's key finding relevant to the criteria)
+
+**Abstract:**
+{abstract_placeholder} 
+
+**JSON Response:**
+{
+  "include": null,
+  "confidence": null,
+  "reasoning": null,
+  "summary": null
+}
