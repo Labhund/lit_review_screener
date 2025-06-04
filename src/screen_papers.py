@@ -1,5 +1,3 @@
-# Contents of /lit_review_screener/lit_review_screener/src/screen_papers.py
-
 import json
 import logging
 from utils import query_ollama, load_config
